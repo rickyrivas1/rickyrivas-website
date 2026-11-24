@@ -1,0 +1,520 @@
+
+/* General Website Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 22px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #1e3a5f;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #334155;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Homepage Introduction */
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 22px;
+    color: #475569;
+    max-width: 700px;
+}
+
+/* Homepage Buttons */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.button-secondary {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.button-secondary:hover {
+    background-color: #eff6ff;
+}
+
+/* Main Sections */
+
+.content-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #475569;
+    max-width: 850px;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+}
+
+/* Project Cards */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.project-category {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.project-card h3 {
+    color: #0f172a;
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #475569;
+}
+
+.project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-tags span {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.project-card .project-status {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Experience Cards */
+
+.experience-card {
+    background-color: #ffffff;
+    padding: 26px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.experience-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.experience-card .experience-subtitle {
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Writing Card */
+
+.writing-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 26px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.writing-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* Smaller Notes */
+
+.content-section .small-note {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Mobile Screen Adjustments */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .content-section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .content-section h2 {
+        font-size: 27px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Buttons */
+
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons .button-secondary {
+    margin-top: 10px;
+}
+
+/* Experience Lists */
+
+.experience-list {
+    padding-left: 22px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.experience-list li {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 13px;
+}
+
+.experience-list li::marker {
+    color: #2563eb;
+}
+
+.experience-card {
+    margin-bottom: 25px;
+}
+
+/* Expandable Experience Cards */
+
+.expandable-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.expandable-card summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 26px;
+}
+
+.expandable-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.expandable-card summary::marker {
+    content: "";
+}
+
+.expandable-card summary:hover {
+    background-color: #f8fafc;
+}
+
+.expandable-card summary:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: -4px;
+}
+
+.experience-summary h3 {
+    margin-top: 0;
+}
+
+.expand-label {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.expand-label::after {
+    content: " ▼";
+    font-size: 11px;
+}
+
+.expandable-card[open] .expand-label::after {
+    content: " ▲";
+}
+
+.hide-text {
+    display: none;
+}
+
+.expandable-card[open] .show-text {
+    display: none;
+}
+
+.expandable-card[open] .hide-text {
+    display: inline;
+}
+
+.experience-details {
+    padding: 20px 26px 28px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.experience-details h4 {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+/* Writing & Insights */
+
+#writing .writing-card {
+    margin-top: 25px;
+    padding: 0;
+}
+
+#writing .writing-card summary {
+    padding: 28px;
+}
+
+#writing .writing-card h3 {
+    font-size: 23px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#writing .writing-card summary p {
+    font-size: 16px;
+}
+
+#writing .experience-details p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Article Reflection Styling */
+
+#writing .experience-details p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#writing .article-date {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.article-source {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+#writing .article-source p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.article-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Project GitHub Links */
+
+.project-link {
+    display: inline-block;
+    margin-top: 22px;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.project-link:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
